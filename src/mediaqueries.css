@@ -19,6 +19,11 @@
     #hamburger-nav {
       display: flex;
     }
+    .hamburger-menu {
+      display: flex;
+      position: fixed;
+      padding-left: 30rem;
+    }
     #experience,
     .experience-details-container {
       margin-top: 2rem;
