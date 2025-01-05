@@ -19,10 +19,8 @@
     #hamburger-nav {
       display: flex;
     }
-    .hamburger-menu {
-      display: flex;
-      position: fixed;
-      padding-left: 30rem;
+    .logo {
+      display: none;
     }
     #experience,
     .experience-details-container {
