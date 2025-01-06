@@ -2,6 +2,7 @@
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
 // import { setupCounter } from './counter.js'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
@@ -30,3 +31,8 @@ function toggleMenu() {
 
 // setupCounter(document.querySelector('#counter'))
 window.toggleMenu = toggleMenu;
+
+window.addEventListener('load', () => {
+  const speedInsights = new SpeedInsights();
+  speedInsights.run();
+});
