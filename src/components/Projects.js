@@ -1,10 +1,14 @@
+import project1 from "../assets/project-1.png";
+import project2 from "../assets/project-2.png";
+import project3 from "../assets/project-3.png";
+
 export const Projects = () => {
   return `
     <section id="projects">
       <h2 class="section-title">My Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <img src="./src/assets/project-1.png" alt="Project 1">
+          <img src="${project1}" alt="Project 1">
           <div class="project-card-content">
             <h3>Medical Document Data Extractor</h3>
             <p>A tool to extract data from medical documents with high accuracy.</p>
@@ -12,7 +16,7 @@ export const Projects = () => {
           </div>
         </div>
         <div class="project-card">
-          <img src="./src/assets/project-2.png" alt="Project 2">
+          <img src="${project2}" alt="Project 2">
           <div class="project-card-content">
             <h3>Cumulative Table Design</h3>
             <p>An innovative approach to designing cumulative tables for data warehousing.</p>
@@ -20,7 +24,7 @@ export const Projects = () => {
           </div>
         </div>
         <div class="project-card">
-          <img src="./src/assets/project-3.png" alt="Project 3">
+          <img src="${project3}" alt="Project 3">
           <div class="project-card-content">
             <h3>Document Processing RAG Based Chat System</h3>
             <p>A chat system that uses RAG for processing and understanding documents.</p>
