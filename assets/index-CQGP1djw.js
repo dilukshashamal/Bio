@@ -10,27 +10,30 @@
         </ul>
       </nav>
     </header>
-  `,l=()=>`
+  `,c="/assets/profile-pic-ChxRPOVK.png",l=()=>`
     <section id="hero" class="hero">
+      <div class="hero-image">
+          <img src="${c}" alt="Kavindu Shamal">
+      </div>
       <div class="hero-content">
         <h1>Kavindu Shamal</h1>
         <p class="subtitle">AI Engineer | Bridging AI and Human Cognition</p>
         <a href="./src/assets/resume.pdf" class="btn" download>Download CV</a>
       </div>
     </section>
-  `,c=()=>`
+  `,d="/assets/about-pic-R4_1jrhC.png",u=()=>`
     <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-container">
             <div class="about-image">
-                <img src="./src/assets/about-pic.png" alt="About Me">
+                <img src="${d}" alt="About Me">
             </div>
             <div class="about-text">
                 <p>I am deeply passionate about the intersection of artificial intelligence and the human brain. The way our minds recognize patterns has always fascinated me, driving my curiosity to explore AI's potential in mimicking these natural processes. My journey in AI involves delving into various techniques within this domain, with a particular focus on understanding and replicating the intricate patterns found in nature. I firmly believe that the foundation of all technology lies in the natural world, and I am committed to uncovering these patterns to inspire innovative technological solutions.</p>
             </div>
         </div>
     </section>
-  `,d=()=>`
+  `,h=()=>`
     <section id="skills">
       <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
@@ -72,7 +75,7 @@
         </div>
       </div>
     </section>
-  `,u=()=>`
+  `,p=()=>`
       <section id="experience">
           <h2 class="section-title">My Experience</h2>
           <div class="timeline">
@@ -99,7 +102,7 @@
               </div>
           </div>
       </section>
-    `,h=()=>`
+    `,m=()=>`
     <section id="certifications">
       <h2 class="section-title">Certifications</h2>
       <div class="certifications-grid">
@@ -117,12 +120,12 @@
         </div>
       </div>
     </section>
-  `,m=()=>`
+  `,v="/assets/project-1-DjEbsT8m.png",g="/assets/project-2-gry8C-Ug.png",f="/assets/project-3-Bdx30zLG.png",y=()=>`
     <section id="projects">
       <h2 class="section-title">My Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <img src="./src/assets/project-1.png" alt="Project 1">
+          <img src="${v}" alt="Project 1">
           <div class="project-card-content">
             <h3>Medical Document Data Extractor</h3>
             <p>A tool to extract data from medical documents with high accuracy.</p>
@@ -130,7 +133,7 @@
           </div>
         </div>
         <div class="project-card">
-          <img src="./src/assets/project-2.png" alt="Project 2">
+          <img src="${g}" alt="Project 2">
           <div class="project-card-content">
             <h3>Cumulative Table Design</h3>
             <p>An innovative approach to designing cumulative tables for data warehousing.</p>
@@ -138,7 +141,7 @@
           </div>
         </div>
         <div class="project-card">
-          <img src="./src/assets/project-3.png" alt="Project 3">
+          <img src="${f}" alt="Project 3">
           <div class="project-card-content">
             <h3>Document Processing RAG Based Chat System</h3>
             <p>A chat system that uses RAG for processing and understanding documents.</p>
@@ -147,7 +150,7 @@
         </div>
       </div>
     </section>
-  `,p=()=>`
+  `,b=()=>`
       <section id="contact">
           <h2 class="section-title">Contact Me</h2>
           <form class="contact-form">
@@ -157,7 +160,7 @@
               <button type="submit" class="btn">Send Message</button>
           </form>
       </section>
-    `,v=()=>`
+    `,j=()=>`
       <footer class="footer">
           <p>&copy; 2025 Kavindu Shamal. All Rights Reserved.</p>
       </footer>
@@ -165,12 +168,12 @@
   ${o()}
   <main>
     ${l()}
-    ${c()}
-    ${d()}
     ${u()}
     ${h()}
-    ${m()}
     ${p()}
+    ${m()}
+    ${y()}
+    ${b()}
   </main>
-  ${v()}
+  ${j()}
 `;document.querySelectorAll('a[href^="#"]').forEach(s=>{s.addEventListener("click",function(i){i.preventDefault(),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});
