@@ -1,19 +1,25 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const a of t.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&n(a)}).observe(document,{childList:!0,subtree:!0});function r(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=r(e);fetch(e.href,t)}})();const o=()=>`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const a of t.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&r(a)}).observe(document,{childList:!0,subtree:!0});function l(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function r(e){if(e.ep)return;e.ep=!0;const t=l(e);fetch(e.href,t)}})();const o=()=>`
     <header class="header">
       <nav class="nav">
-       <a href="#" class="nav-logo"></a>
+        <a href="#" class="nav-logo">Kavindu Shamal</a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
       </nav>
     </header>
-  `,c="/assets/profile-pic-ChxRPOVK.png",l=()=>`
+  `,d="/assets/profile-pic-ChxRPOVK.png",u=()=>`
     <section id="hero" class="hero">
       <div class="hero-image">
-          <img src="${c}" alt="Kavindu Shamal">
+          <img src="${d}" alt="Kavindu Shamal">
       </div>
       <div class="hero-content">
         <h1>Diluksha Shamal</h1>
@@ -21,19 +27,19 @@
         <a href="./src/assets/resume.pdf" class="btn" download>Download CV</a>
       </div>
     </section>
-  `,d="/assets/about-pic-R4_1jrhC.png",u=()=>`
+  `,h="/assets/about-pic-R4_1jrhC.png",p=()=>`
     <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-container">
             <div class="about-image">
-                <img src="${d}" alt="About Me">
+                <img src="${h}" alt="About Me">
             </div>
             <div class="about-text">
                 <p>I am deeply passionate about the intersection of artificial intelligence and the human brain. The way our minds recognize patterns has always fascinated me, driving my curiosity to explore AI's potential in mimicking these natural processes. My journey in AI involves delving into various techniques within this domain, with a particular focus on understanding and replicating the intricate patterns found in nature. I firmly believe that the foundation of all technology lies in the natural world, and I am committed to uncovering these patterns to inspire innovative technological solutions.</p>
             </div>
         </div>
     </section>
-  `,h=()=>`
+  `,m=()=>`
     <section id="skills">
       <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
@@ -75,7 +81,7 @@
         </div>
       </div>
     </section>
-  `,p=()=>`
+  `,v=()=>`
       <section id="experience">
           <h2 class="section-title">My Experience</h2>
           <div class="timeline">
@@ -102,7 +108,7 @@
               </div>
           </div>
       </section>
-    `,m=()=>`
+    `,g=()=>`
     <section id="certifications">
       <h2 class="section-title">Certifications</h2>
       <div class="certifications-grid">
@@ -120,12 +126,12 @@
         </div>
       </div>
     </section>
-  `,v="/assets/project-1-DjEbsT8m.png",g="/assets/project-2-gry8C-Ug.png",f="/assets/project-3-Bdx30zLG.png",y=()=>`
+  `,f="/assets/project-1-DjEbsT8m.png",b="/assets/project-2-gry8C-Ug.png",y="/assets/project-3-Bdx30zLG.png",j=()=>`
     <section id="projects">
       <h2 class="section-title">My Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <img src="${v}" alt="Project 1">
+          <img src="${f}" alt="Project 1">
           <div class="project-card-content">
             <h3>Medical Document Data Extractor</h3>
             <p>A tool to extract data from medical documents with high accuracy.</p>
@@ -133,7 +139,7 @@
           </div>
         </div>
         <div class="project-card">
-          <img src="${g}" alt="Project 2">
+          <img src="${b}" alt="Project 2">
           <div class="project-card-content">
             <h3>Cumulative Table Design</h3>
             <p>An innovative approach to designing cumulative tables for data warehousing.</p>
@@ -141,7 +147,7 @@
           </div>
         </div>
         <div class="project-card">
-          <img src="${f}" alt="Project 3">
+          <img src="${y}" alt="Project 3">
           <div class="project-card-content">
             <h3>Document Processing RAG Based Chat System</h3>
             <p>A chat system that uses RAG for processing and understanding documents.</p>
@@ -150,7 +156,7 @@
         </div>
       </div>
     </section>
-  `,b=()=>`
+  `,k=()=>`
       <section id="contact">
           <h2 class="section-title">Contact Me</h2>
           <form class="contact-form">
@@ -160,20 +166,20 @@
               <button type="submit" class="btn">Send Message</button>
           </form>
       </section>
-    `,j=()=>`
+    `,A=()=>`
       <footer class="footer">
           <p>&copy; 2025 Kavindu Shamal. All Rights Reserved.</p>
       </footer>
     `;document.querySelector("#app").innerHTML=`
   ${o()}
   <main>
-    ${l()}
     ${u()}
-    ${h()}
     ${p()}
     ${m()}
-    ${y()}
-    ${b()}
+    ${v()}
+    ${g()}
+    ${j()}
+    ${k()}
   </main>
-  ${j()}
-`;document.querySelectorAll('a[href^="#"]').forEach(s=>{s.addEventListener("click",function(i){i.preventDefault(),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});
+  ${A()}
+`;const s=document.querySelector(".hamburger"),c=document.querySelector(".nav-links");s.addEventListener("click",()=>{s.classList.toggle("active"),c.classList.toggle("active")});document.querySelectorAll('a[href^="#"]').forEach(n=>{n.addEventListener("click",function(i){i.preventDefault(),s.classList.remove("active"),c.classList.remove("active"),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});
