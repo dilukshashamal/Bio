@@ -98,7 +98,7 @@
 
               <div class="experience-card">
                   <h3>Junior AI Engineer</h3>
-                  <small>[Confidential Project] | May 2024 – Dec 2024 (8 months) | Sri Lanka</small>
+                  <small>Omdena | May 2024 – Apr 2025 (1 year) | Sri Lanka</small>
                   <ul>
                     <li>Led OCR-driven data processing for the Sri Lanka Tea Board, improving extraction accuracy by 30% through advanced noise reduction.</li>
                     <li>Developed a Retrieval-Augmented Generation (RAG) chatbot to enable interactive document indexing and querying.</li>
