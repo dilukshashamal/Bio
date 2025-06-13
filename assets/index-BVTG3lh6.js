@@ -1,4 +1,4 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const s of t.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&r(s)}).observe(document,{childList:!0,subtree:!0});function o(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function r(e){if(e.ep)return;e.ep=!0;const t=o(e);fetch(e.href,t)}})();const c=()=>`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const s of i.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&r(s)}).observe(document,{childList:!0,subtree:!0});function o(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerPolicy&&(i.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?i.credentials="include":e.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function r(e){if(e.ep)return;e.ep=!0;const i=o(e);fetch(e.href,i)}})();const c=()=>`
     <header class="header">
       <nav class="nav">
         <a href="#" class="nav-logo"></a>
@@ -82,28 +82,50 @@
   `,p=()=>`
       <section id="experience">
           <h2 class="section-title">My Experience</h2>
-          <div class="timeline">
-              <div class="timeline-container right">
-                  <div class="timeline-content">
-                      <h3>Omdena: Junior AI Engineer</h3>
-                      <small>Feb 2024 - Present</small>
-                      <p>Enhanced regulatory decision-making for the Sri Lanka Tea Board by improving data extraction accuracy by 30% through LlamaIndex and OCR.</p>
-                  </div>
+          <div class="experience-list">
+
+              <div class="experience-card">
+                  <h3>AI Software Engineer</h3>
+                  <small>Codezela Technologies | Feb 2025 – Present | Sri Lanka – On-site</small>
+                  <ul>
+                    <li>Spearheaded business process automation by developing scalable web scraping and data processing tools, improving efficiency and reducing manual tasks.</li>
+                    <li>Engineered AI-powered image generation products using advanced generative AI models (e.g., GPT-4 Vision).</li>
+                    <li>Utilized platforms including Vertex AI, Azure AI Foundry, and Amazon Bedrock to build and scale ML applications.</li>
+                    <li>Integrated Text-to-Speech (TTS) models to enhance accessibility and content delivery.</li>
+                    <li>Managed cloud infrastructure on Azure (N-, L-, F-series VMs, Entra ID) and AWS (SageMaker, Bedrock).</li>
+                  </ul>
               </div>
-              <div class="timeline-container left">
-                  <div class="timeline-content">
-                      <h3>Insighture: Infrastructure Engineer (Contract)</h3>
-                      <small>Feb 2024 - May 2024</small>
-                      <p>Optimized AWS infrastructure by automating deployments with CloudFormation, achieving a 40% reduction in deployment time.</p>
-                  </div>
+
+              <div class="experience-card">
+                  <h3>Junior AI Engineer</h3>
+                  <small>[Confidential Project] | May 2024 – Dec 2024 (8 months) | Sri Lanka</small>
+                  <ul>
+                    <li>Led OCR-driven data processing for the Sri Lanka Tea Board, improving extraction accuracy by 30% through advanced noise reduction.</li>
+                    <li>Developed a Retrieval-Augmented Generation (RAG) chatbot to enable interactive document indexing and querying.</li>
+                    <li>Automated over 10,000 healthcare documents, achieving 95% accuracy and cutting manual workload by 70%.</li>
+                  </ul>
               </div>
-              <div class="timeline-container right">
-                  <div class="timeline-content">
-                      <h3>Virtusa: Software Engineer Intern</h3>
-                      <small>Oct 2022 - Feb 2024</small>
-                      <p>Gained over a year of hands-on experience in Unix, Teradata, DataStage, Airflow, and ServiceNow, improving data warehousing efficiency by 35%.</p>
-                  </div>
+
+              <div class="experience-card">
+                  <h3>Infrastructure Engineer</h3>
+                  <small>Insighture | Feb 2024 – Apr 2024 (3 months) | Sri Lanka</small>
+                  <ul>
+                    <li>Managed and optimized AWS infrastructure; automated deployments via CloudFormation.</li>
+                    <li>Strengthened cloud security by configuring IAM policies and access control layers.</li>
+                    <li>Deployed and maintained Wazuh for log monitoring, file integrity, and SIEM integration.</li>
+                    <li>Administered Azure Active Directory for enterprise identity management.</li>
+                  </ul>
               </div>
+
+              <div class="experience-card">
+                  <h3>Infrastructure Operations Engineer (Internship)</h3>
+                  <small>Virtusa | Oct 2022 – Feb 2024 (1 year 5 months) | Sri Lanka</small>
+                  <ul>
+                    <li>Provided production support in data warehousing using Unix, Teradata, DataStage, and Airflow.</li>
+                    <li>Contributed to an AIOps Hackathon-winning project by building a robust observability system for Spring Boot microservices on AWS.</li>
+                  </ul>
+              </div>
+
           </div>
       </section>
     `,m=()=>`
@@ -124,12 +146,12 @@
         </div>
       </div>
     </section>
-  `,v="/assets/project-1-DjEbsT8m.png",g="/assets/project-2-gry8C-Ug.png",f="/assets/project-3-Bdx30zLG.png",b=()=>`
+  `,g="/assets/project-1-DjEbsT8m.png",v="/assets/project-2-gry8C-Ug.png",f="/assets/project-3-Bdx30zLG.png",b=()=>`
     <section id="projects">
       <h2 class="section-title">My Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <img src="${v}" alt="Project 1">
+          <img src="${g}" alt="Project 1">
           <div class="project-card-content">
             <h3>Medical Document Data Extractor</h3>
             <p>A tool to extract data from medical documents with high accuracy.</p>
@@ -137,7 +159,7 @@
           </div>
         </div>
         <div class="project-card">
-          <img src="${g}" alt="Project 2">
+          <img src="${v}" alt="Project 2">
           <div class="project-card-content">
             <h3>Cumulative Table Design</h3>
             <p>An innovative approach to designing cumulative tables for data warehousing.</p>
@@ -164,7 +186,7 @@
               <button type="submit" class="btn">Send Message</button>
           </form>
       </section>
-    `,k=()=>`
+    `,A=()=>`
       <footer class="footer">
           <p>&copy; 2025 Diluksha Shamal. All Rights Reserved.</p>
       </footer>
@@ -179,5 +201,5 @@
     ${b()}
     ${y()}
   </main>
-  ${k()}
-`;const n=document.querySelector(".hamburger"),l=document.querySelector(".nav-links");n.addEventListener("click",()=>{n.classList.toggle("active"),l.classList.toggle("active")});document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(i){i.preventDefault(),n.classList.remove("active"),l.classList.remove("active"),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});particlesJS("particles-js",{particles:{number:{value:80,density:{enable:!0,value_area:800}},color:{value:"#8a2be2"},shape:{type:"circle"},opacity:{value:.6,random:!1},size:{value:3,random:!0},line_linked:{enable:!0,distance:150,color:"#8a2be2",opacity:.4,width:1},move:{enable:!0,speed:4,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"repulse"},onclick:{enable:!0,mode:"push"}},modes:{repulse:{distance:100},push:{particles_nb:4}}},retina_detect:!0});const j=new IntersectionObserver(a=>{a.forEach(i=>{i.isIntersecting&&i.target.classList.add("visible")})},{threshold:.1});document.querySelectorAll("section").forEach(a=>{a.classList.add("hidden"),j.observe(a)});
+  ${A()}
+`;const n=document.querySelector(".hamburger"),l=document.querySelector(".nav-links");n.addEventListener("click",()=>{n.classList.toggle("active"),l.classList.toggle("active")});document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(t){t.preventDefault(),n.classList.remove("active"),l.classList.remove("active"),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});particlesJS("particles-js",{particles:{number:{value:80,density:{enable:!0,value_area:800}},color:{value:"#8a2be2"},shape:{type:"circle"},opacity:{value:.6,random:!1},size:{value:3,random:!0},line_linked:{enable:!0,distance:150,color:"#8a2be2",opacity:.4,width:1},move:{enable:!0,speed:4,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"repulse"},onclick:{enable:!0,mode:"push"}},modes:{repulse:{distance:100},push:{particles_nb:4}}},retina_detect:!0});const k=new IntersectionObserver(a=>{a.forEach(t=>{t.isIntersecting&&t.target.classList.add("visible")})},{threshold:.1});document.querySelectorAll("section").forEach(a=>{a.classList.add("hidden"),k.observe(a)});
