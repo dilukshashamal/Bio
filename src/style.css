@@ -1,10 +1,10 @@
 :root {
   --primary-color: #8a2be2; /* BlueViolet */
   --secondary-color: #00bfff; /* DeepSkyBlue */
-  --background-color: #121212;
-  --surface-color: #1e1e1e;
-  --text-color: #ffffff;
-  --text-secondary-color: #a0a0a0;
+  --background-color: #f8f9fa; /* Very light gray */
+  --surface-color: #ffffff; /* White */
+  --text-color: #212529; /* Dark Gray */
+  --text-secondary-color: #6c757d; /* Lighter Gray */
   --font-family: "Roboto", sans-serif;
 }
 
@@ -24,12 +24,31 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Add other component styles here from the below component files */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Scroll Animation Styles */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* General Styles */
 section {
   padding: 6rem 2rem;
-  border-bottom: 1px solid var(--surface-color);
+  border-bottom: 1px solid #dee2e6; /* Light border color */
 }
 
 .section-title {
@@ -45,7 +64,7 @@ section {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(18, 18, 18, 0.8);
+  background-color: rgba(248, 249, 250, 0.8); /* Light transparent background */
   backdrop-filter: blur(10px);
   z-index: 1000;
   transition: background-color 0.3s;
@@ -106,7 +125,7 @@ section {
 .hero-content .btn {
   padding: 1rem 2rem;
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -191,6 +210,7 @@ section {
   background-color: var(--surface-color);
   position: relative;
   border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* Projects Section */
@@ -206,11 +226,14 @@ section {
   background-color: var(--surface-color);
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .project-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.4); /* Glow effect with primary color */
 }
 
 .project-card img {
@@ -237,7 +260,7 @@ section {
 /* Updated Contact Button */
 .contact-form .btn {
   background: var(--primary-color);
-  color: var(--text-color);
+  color: #ffffff;
   border: none;
   padding: 1rem 2rem;
   border-radius: 50px;
@@ -258,7 +281,7 @@ section {
 .contact-form textarea {
   width: 100%;
   padding: 1rem;
-  border: 1px solid var(--surface-color);
+  border: 1px solid #dee2e6;
   background-color: var(--surface-color);
   color: var(--text-color);
   border-radius: 5px;
@@ -269,6 +292,7 @@ section {
   text-align: center;
   padding: 2rem;
   background-color: var(--surface-color);
+  border-top: 1px solid #dee2e6;
 }
 
 /* Skills Section */
@@ -284,6 +308,7 @@ section {
   background-color: var(--surface-color);
   padding: 2rem;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .skill-category h3 {
@@ -299,7 +324,8 @@ section {
 }
 
 .skill-list li {
-  background-color: var(--background-color);
+  background-color: #e9ecef; /* Lighter background for tags */
+  color: var(--text-color);
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
@@ -318,6 +344,7 @@ section {
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .certification-card h3 {
