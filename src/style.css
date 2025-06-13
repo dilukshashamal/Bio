@@ -440,3 +440,15 @@ section {
     left: 15px;
   }
 }
+
+.experience-card ul {
+  list-style-position: outside;
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.experience-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: var(--text-secondary-color);
+}
