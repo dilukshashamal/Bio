@@ -37,7 +37,7 @@
             </div>
         </div>
     </section>
-  `,h=()=>`
+  `,p=()=>`
     <section id="skills">
       <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
@@ -79,7 +79,7 @@
         </div>
       </div>
     </section>
-  `,p=()=>`
+  `,h=()=>`
       <section id="experience">
           <h2 class="section-title">My Experience</h2>
           <div class="experience-list">
@@ -191,7 +191,6 @@
           <div class="project-card-content">
             <h3>ETL Pipeline Automation</h3>
             <p>This project sets up an automated ETL pipeline using Apache Airflow and PostgreSQL, managing data extraction, transformation, and loading via modular DAGs, deployed with Docker Compose.</p>
-            <a href="https://github.com/dilukshashamal/Medical-Data-Extractor_Beta" class="btn" target="_blank">View on GitHub</a>
           </div>
         </div>
 
@@ -216,8 +215,8 @@
   <main>
     ${d()}
     ${u()}
-    ${h()}
     ${p()}
+    ${h()}
     ${m()}
     ${A()}
     ${k()}
