@@ -50,7 +50,6 @@ export const Projects = () => {
           <div class="project-card-content">
             <h3>ETL Pipeline Automation</h3>
             <p>This project sets up an automated ETL pipeline using Apache Airflow and PostgreSQL, managing data extraction, transformation, and loading via modular DAGs, deployed with Docker Compose.</p>
-            <a href="https://github.com/dilukshashamal/Medical-Data-Extractor_Beta" class="btn" target="_blank">View on GitHub</a>
           </div>
         </div>
 
