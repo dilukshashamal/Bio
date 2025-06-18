@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const s of i.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&r(s)}).observe(document,{childList:!0,subtree:!0});function l(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerPolicy&&(i.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?i.credentials="include":e.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function r(e){if(e.ep)return;e.ep=!0;const i=l(e);fetch(e.href,i)}})();const c=()=>`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const n of i.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&r(n)}).observe(document,{childList:!0,subtree:!0});function l(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerPolicy&&(i.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?i.credentials="include":e.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function r(e){if(e.ep)return;e.ep=!0;const i=l(e);fetch(e.href,i)}})();const c=()=>`
     <header class="header">
       <nav class="nav">
         <a href="#" class="nav-logo"></a>
@@ -37,7 +37,7 @@
             </div>
         </div>
     </section>
-  `,p=()=>`
+  `,h=()=>`
     <section id="skills">
       <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
@@ -79,56 +79,64 @@
         </div>
       </div>
     </section>
-  `,h=()=>`
+  `,m=()=>`
       <section id="experience">
           <h2 class="section-title">My Experience</h2>
-          <div class="experience-list">
+          <div class="timeline">
 
-              <div class="experience-card">
-                  <h3>AI Software Engineer</h3>
-                  <small>Codezela Technologies | Feb 2025 – Present | Sri Lanka – On-site</small>
-                  <ul>
-                    <li>Spearheaded business process automation by developing scalable web scraping and data processing tools, improving efficiency and reducing manual tasks.</li>
-                    <li>Engineered AI-powered image generation products using advanced generative AI models (e.g., GPT-4 Vision).</li>
-                    <li>Utilized platforms including Vertex AI, Azure AI Foundry, and Amazon Bedrock to build and scale ML applications.</li>
-                    <li>Integrated Text-to-Speech (TTS) models to enhance accessibility and content delivery.</li>
-                    <li>Managed cloud infrastructure on Azure (N-, L-, F-series VMs, Entra ID) and AWS (SageMaker, Bedrock).</li>
-                  </ul>
+              <div class="timeline-container right">
+                  <div class="timeline-content">
+                      <h3>AI Software Engineer</h3>
+                      <small>Codezela Technologies | Feb 2025 – Present | Sri Lanka – On-site</small>
+                      <ul>
+                        <li>Spearheaded business process automation by developing scalable web scraping and data processing tools, improving efficiency and reducing manual tasks.</li>
+                        <li>Engineered AI-powered image generation products using advanced generative AI models (e.g., GPT-4 Vision).</li>
+                        <li>Utilized platforms including Vertex AI, Azure AI Foundry, and Amazon Bedrock to build and scale ML applications.</li>
+                        <li>Integrated Text-to-Speech (TTS) models to enhance accessibility and content delivery.</li>
+                        <li>Managed cloud infrastructure on Azure (N-, L-, F-series VMs, Entra ID) and AWS (SageMaker, Bedrock).</li>
+                      </ul>
+                  </div>
               </div>
 
-              <div class="experience-card">
-                  <h3>Junior AI Engineer</h3>
-                  <small>Omdena | May 2024 – Apr 2025 (1 year) | Sri Lanka</small>
-                  <ul>
-                    <li>Led OCR-driven data processing for the Sri Lanka Tea Board, improving extraction accuracy by 30% through advanced noise reduction.</li>
-                    <li>Developed a Retrieval-Augmented Generation (RAG) chatbot to enable interactive document indexing and querying.</li>
-                    <li>Automated over 10,000 healthcare documents, achieving 95% accuracy and cutting manual workload by 70%.</li>
-                  </ul>
+              <div class="timeline-container left">
+                  <div class="timeline-content">
+                      <h3>Junior AI Engineer</h3>
+                      <small>Omdena | Feb 2024 – Present</small>
+                      <ul>
+                          <li>Enhanced regulatory decision-making for the Sri Lanka Tea Board with data preprocessing and noise reduction on over 85% of data, improving data extraction accuracy by 30% through LlamaIndex and OCR.</li>
+                          <li>Tackled cloud environment challenges by selecting Google Cloud for scalability, achieving a 25% increase in processing speed and seamless tool integration.</li>
+                          <li>Streamlined model performance with consistent preprocessing of multilingual regulatory documents, boosting model accuracy by 35% and enhancing decision support for regulatory processes.</li>
+                      </ul>
+                  </div>
               </div>
 
-              <div class="experience-card">
-                  <h3>Infrastructure Engineer</h3>
-                  <small>Insighture | Feb 2024 – Apr 2024 (3 months) | Sri Lanka</small>
-                  <ul>
-                    <li>Managed and optimized AWS infrastructure; automated deployments via CloudFormation.</li>
-                    <li>Strengthened cloud security by configuring IAM policies and access control layers.</li>
-                    <li>Deployed and maintained Wazuh for log monitoring, file integrity, and SIEM integration.</li>
-                    <li>Administered Azure Active Directory for enterprise identity management.</li>
-                  </ul>
+              <div class="timeline-container right">
+                  <div class="timeline-content">
+                      <h3>Infrastructure Engineer (Contract)</h3>
+                      <small>Insighture | Feb 2024 – May 2024</small>
+                      <ul>
+                          <li>Optimized AWS infrastructure by automating deployments with CloudFormation, achieving a 40% reduction in deployment time and enhancing environment consistency.</li>
+                          <li>Configured automated alerts within Wazuh that identified critical logs leading to quicker remediation actions, reduced average resolution time from three days down to just one day.</li>
+                          <li>Configured Azure Active Directory, streamlining identity management and reducing access issues by 30%, improving efficiency and security across the organization.</li>
+                      </ul>
+                  </div>
               </div>
 
-              <div class="experience-card">
-                  <h3>Infrastructure Operations Engineer (Internship)</h3>
-                  <small>Virtusa | Oct 2022 – Feb 2024 (1 year 5 months) | Sri Lanka</small>
-                  <ul>
-                    <li>Provided production support in data warehousing using Unix, Teradata, DataStage, and Airflow.</li>
-                    <li>Contributed to an AIOps Hackathon-winning project by building a robust observability system for Spring Boot microservices on AWS.</li>
-                  </ul>
+              <div class="timeline-container left">
+                  <div class="timeline-content">
+                      <h3>Software Engineer Intern</h3>
+                      <small>Virtusa | Oct 2022 – Feb 2024</small>
+                      <ul>
+                          <li>Gained over a year of hands-on experience in Unix, Teradata, DataStage, Airflow, and ServiceNow, improving data warehousing efficiency by 35% through optimized ETL processes.</li>
+                          <li>Certified in AWS Cloud and completed career essentials in Generative AI by Microsoft and LinkedIn.</li>
+                          <li>Delivered actionable findings that addressed critical inefficiencies in workflows leading to improved overall operational performance.</li>
+                      </ul>
+                  </div>
               </div>
 
           </div>
       </section>
-    `,m=()=>`
+    `,p=()=>`
     <section id="certifications">
       <h2 class="section-title">Certifications</h2>
       <div class="certifications-grid">
@@ -206,7 +214,7 @@
               <button type="submit" class="btn">Send Message</button>
           </form>
       </section>
-    `,S=()=>`
+    `,j=()=>`
       <footer class="footer">
           <p>&copy; 2025 Diluksha Shamal. All Rights Reserved.</p>
       </footer>
@@ -215,11 +223,11 @@
   <main>
     ${d()}
     ${u()}
-    ${p()}
     ${h()}
     ${m()}
+    ${p()}
     ${A()}
     ${k()}
   </main>
-  ${S()}
-`;const n=document.querySelector(".hamburger"),o=document.querySelector(".nav-links");n.addEventListener("click",()=>{n.classList.toggle("active"),o.classList.toggle("active")});document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(t){t.preventDefault(),n.classList.remove("active"),o.classList.remove("active"),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});particlesJS("particles-js",{particles:{number:{value:80,density:{enable:!0,value_area:800}},color:{value:"#8a2be2"},shape:{type:"circle"},opacity:{value:.6,random:!1},size:{value:3,random:!0},line_linked:{enable:!0,distance:150,color:"#8a2be2",opacity:.4,width:1},move:{enable:!0,speed:4,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"repulse"},onclick:{enable:!0,mode:"push"}},modes:{repulse:{distance:100},push:{particles_nb:4}}},retina_detect:!0});const j=new IntersectionObserver(a=>{a.forEach(t=>{t.isIntersecting&&t.target.classList.add("visible")})},{threshold:.1});document.querySelectorAll("section").forEach(a=>{a.classList.add("hidden"),j.observe(a)});
+  ${j()}
+`;const s=document.querySelector(".hamburger"),o=document.querySelector(".nav-links");s.addEventListener("click",()=>{s.classList.toggle("active"),o.classList.toggle("active")});document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(t){t.preventDefault(),s.classList.remove("active"),o.classList.remove("active"),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});particlesJS("particles-js",{particles:{number:{value:80,density:{enable:!0,value_area:800}},color:{value:"#8a2be2"},shape:{type:"circle"},opacity:{value:.6,random:!1},size:{value:3,random:!0},line_linked:{enable:!0,distance:150,color:"#8a2be2",opacity:.4,width:1},move:{enable:!0,speed:4,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"repulse"},onclick:{enable:!0,mode:"push"}},modes:{repulse:{distance:100},push:{particles_nb:4}}},retina_detect:!0});const S=new IntersectionObserver(a=>{a.forEach(t=>{t.isIntersecting&&t.target.classList.add("visible")})},{threshold:.1});document.querySelectorAll("section").forEach(a=>{a.classList.add("hidden"),S.observe(a)});
